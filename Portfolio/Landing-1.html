@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+ <head>
+    <meta name="Description" content="HTML, CSS, Java, Front end">
+    <meta charset="utf-8">
+     <title>Landing</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ </head>
+ <body>
+ <nav>
+        <div class="Left-div ">
+            <div class="nav-link active-link">
+            <a href="Landing-1.html ">HOME</a>
+            </div>
+            <div class="nav-link">
+            <a href="About me.html">ABOUT ME</a>
+            </div>
+        </div>
+    
+        <div class="Right-div">
+            <div>MARKO GAVRILOVIĆ</div>
+        </div>
+ </nav>
+  
+    <div class="pic-container">
+        <div class="cont">
+        <img src="/Images/html5.jpg" alt="">
+        <div class="subtitle">Decent knowledge of HTML5, that I'm currently still looking to improve</div>
+        </div>
+        <div class ="cont">
+        <img src="/Images/images.jpg" alt="">
+        <div class="subtitle">Honorary work in AutoCAD, as well as learning it through the university</div>
+        </div>
+        <div class="cont">
+        <img src="/Images/sta-je-css.png" alt="">
+        <div class="subtitle">Good knowledge of CSS, that I'm currently still looking to improve</div>
+        </div>
+        <div class="cont">
+        <img src="/Images/4C7566EA-3DA8-4BAB-B8D0-E8F6B7CF3068.jpg" alt="">
+        <div class="subtitle">Been in charge of point machine development department</div>
+        </div>
+        <div class="cont">
+        <img src="/Images/office.jpg" alt="">
+        <div class="subtitle">Great knowledge of Office, recently did a project in excel about food listings</div>
+        </div>
+        <div class="cont">
+        <img src="/Images/javascript-1567486564472.jpg" alt="">
+        <div class="subtitle">Currently learning Javascript, with a plan of learning react.js and node.js</div>
+        </div>    
+    </div>
+ </body> 
+ <script>
+     const cont = document.querySelectorAll('.cont')
+     
+     
+     cont.forEach(cont => {
+         cont.addEventListener('mouseover',() => {
+            cont.childNodes[1].classList.add('img-darken');
+         })
+         cont.addEventListener('mouseout',() => {
+            cont.childNodes[1].classList.remove('img-darken');
+         })
+     });
+ </script>
+ <footer>
+<div class="footer">
+    <div class="left-footer">
+    <h3>Contact info</h3>
+    <div class="email">E-mail: gavrilovic96@hotmail.com</div>
+    <div>Phone: +381 066118704</div>
+    </div>
+    <div class="right-footer">
+    <form class="sub-form">
+        <input type="text" name="name" placeholder="Name" id="name">
+        <br>
+        <input type="email" name="email" placeholder="E-mail" required>
+        <br>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+        <br>
+        <Button>Submit</Button>
+    </form>
+    </div>
+</div>
+ </footer>           
+</html>
